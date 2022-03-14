@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet href="style.css" type="text/css" media=screen>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Buscador de Peliculas</title>
+</head>
+
+<body>
+    <div id="encabezado">
+        <p id="titulo">*** Películas 2022 ***</p>
+    </div>
+    
+    <div class="contenedor">
+        <div class="busqueda">
+            <i class="fa fa-search" aria-hidden="true"></i> <input type="text" id="buscador">
+
+        </div>
+
+        <div class="selector">
+            <label for="calificacion">Calificación</label>
+            <select class="" id="calificacion">
+                <option value="">Seleccione</option>
+                <option value="Muy Bueno">Muy Bueno</option>
+                <option value="Bueno">Bueno</option>
+                <option value="Regular">Regular</option>
+                <option value="Malo">Malo</option>
+                <option value="Muy Malo">Muy Malo</option>
+            </select>
+        </div>
+        
+        <h2>Resultados:</h2>
+        <div class="resultados">
+            <div id="filtrado"></div>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="./main.js">  </script>
+</body>
+
+</html>
